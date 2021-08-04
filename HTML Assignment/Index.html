@@ -8,13 +8,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Page</title>
     <link href="Style.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#about-div">About</a>
+        <a href="#flex-container">Projects</a>
+        <a href="#contact-div">Contact</a>
+    </div>
     <div class="container">
         <h1>Hello I'm Vaibhav</h1>
         <h1>I Am A Software Developer</h1>
         <img class="image1" src="image4.jfif" alt="Profile Pic" height="200px" width="300px">
         <img class="image2" src="image1.jfif" alt="Second Pic" height="200px" width="300px">
+    </div>
+    <div id="about-div">
+        <h2><b>About Me</b></h2>
+        <p>
+            Web and Software Developer, With Experience and Knowledge ,
+            Working in Web and Software Development Technologies , Delivering
+            Quality Work
+        </p>
+        <h3><b>Click Here To Know More And Download The Resume</b></h3>
+        <form action="18BCS1772 .pdf">
+            <button class="button" type="submit">RESUME</button>
+        </form>
     </div>
     <div class="flex-container">
         <div1 class="flex-container div1">
@@ -26,14 +45,6 @@
             </ul>
         </div1>
         <div2 class="flex-container div2">
-            <h2><b>About Me</b></h2>
-            <p>
-                Web and Software Developer, With Experience and Knowledge ,
-                Working in Web and Software Development Technologies , Delivering
-                Quality Work
-            </p>
-        </div2>
-        <div3 class="flex-container div3">
             <h2>My Skills</h2>
             <table>
                 <tr>
@@ -53,17 +64,24 @@
                     <td>Intermediate</td>
                 </tr>
                 <tr>
-                    <td>C++</td>
+                    <td>Python</td>
                     <td>Intermediate</td>
                 </tr>
             </table>
-        </div3>
+        </div2>
     </div>
-    <div class="contact-div">
+    <div id="contact-div">
         <h2>Contact Me For Queries</h2>
         <form action="Contact Me.html">
-            <button style=" padding: 15px 32px;font-size: 20px;" type="submit">Contact Me</button>
+            <button class="button" type="submit">Contact Me</button>
         </form>
+    </div>
+    <div class="social-media">
+        <h2><b>Follow And Reach Out To Me !</b></h2>
+        <h4>You Can Contact Me Through My Social Media Handles</h4>
+        <a href="https://www.linkedin.com/in/vaibhav-goel-2319591b9/" class="fa fa-linkedin"></a>
+        <a href="https://twitter.com/_vaibhav_goel" class="fa fa-twitter"></a>
+        <a href="https://join.skype.com/invite/V5Trxt22RMjq" class="fa fa-skype"></a>
     </div>
 </body>
 </html>
