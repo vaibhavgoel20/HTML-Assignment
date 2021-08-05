@@ -24,20 +24,22 @@
         }
 
 .container {
-    background-color: red;
+    background-color: #ff8080;
     color: black;
     font-size: 20px;
     text-align: center;
     margin-top: -25px;
+    height: 68vh;
 }
 
 #about-div {
-    background-color: forestgreen;
+    background-color: #e6e6ff;
     font-size: 25px;
     text-align: center;
     height: 50vh;
     width: 203vh;
     margin-top: -25px;
+    border-top-style: solid;
 }
 
 .button {
@@ -57,7 +59,7 @@
     .flex-container div1 {
         flex-direction: column;
         align-items: center;
-        background-color: orange;
+        background-color: #ccffe6;
         font-size: 25px;
         text-align: left;
         height: 50vh;
@@ -67,7 +69,7 @@
     .flex-container div2 {
         flex-direction: column;
         align-items: center;
-        background-color: orangered;
+        background-color: #ccddff;
         font-size: 25px;
         text-align: center;
         height: 50vh;
@@ -82,20 +84,23 @@ table, th, td {
 
 #contact-div {
     margin-top: -25px;
-    background-color: red;
+    background-color: #ffccff;
     font-size: 25px;
     color: black;
-    height: 25vh;
+    height: 30vh;
     text-align: center;
+    padding-top: 25px;
+    border-top-style: solid;
 }
 
 .social-media {
-    background-color: steelblue;
+    background-color: #e6e6ff;
     font-size: 25px;
     text-align: center;
     height: 40vh;
     width: 203vh;
     margin-top: -25px;
+    border-top-style: solid;
 }
 
 .fa {
@@ -126,9 +131,50 @@ table, th, td {
     color: white;
 }
 
-.query-div {
-    background-color: lightblue;
-    color: red;
+.query-head {
     text-align: center;
-    font-size: 1.2rem;
+    background-color: powderblue;
+    height: 15vh;
+    font-size: 25px;
+    line-height: 90px;
+    margin-top: -35px;
 }
+
+.query-div {
+    border-radius: 5px;
+    background-color: lightcyan;
+    padding: 20px;
+    line-height: 10px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+select, input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.query-button {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+    .query-button:hover {
+        background-color: #45a049;
+    }

@@ -10,26 +10,33 @@
     <link href="Style.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
+    <div class="query-head">
+        <h1><b>Contact Form</b></h1>
+    </div>
     <div class="query-div">
-        <h1>Send Your Query</h1><br />
-        <form action="Contact Me.html">
-            <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname"><br><br />
-            <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname"><br><br />
-            <p>Please select your Gender:</p>
-            <input type="radio" id="male" name="male" value="Male">
-            <label for="male">Male</label><br>
-            <input type="radio" id="female" name="female" value="Female">
-            <label for="female">Female</label><br><br />
-            <label for="email">Enter Your Email:</label><br>
-            <input type="text" id="email" name="email"><br /><br />
-            <label for="pass">Enter Your Password:</label><br>
-            <input type="password" id="pass" name="pass"><br /><br />
-            <label for="remember">Remember Me</label><br>
-            <input type="checkbox" id="remember" name="remember"><br /><br />
-            <input onclick="SubmitFunction()" type="submit" value="Submit">
-        </form>
+        <center><h1>Fill The Details And Send Your Query</h1><br /></center>
+        <div>
+            <form action="Contact Me.html">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="India">India</option>
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                </select>
+                <label for="email">Enter The Email</label>
+                <input type="text" id="email" name="email" placeholder="Your Email..">
+                <label for="password">Enter The Password</label>
+                <input type="password" id="pass" name="pass" placeholder="Your Password..">
+                <label for="query">Enter Your Query</label>
+                <input type="text" id="query" name="query" placeholder="Your Query..">
+                <input class="query-button" onclick="SubmitFunction()" type="submit" value="Submit">
+            </form>
+        </div>
     </div>
     <script>
         function SubmitFunction() {
